@@ -31,6 +31,13 @@ registerBlockType( 'udemy/rich-text', {
         );
     },
     save: ( props ) => {
+        return (
+            <div>
+                <h3>Rich Text Example Block</h3>
+                <div className="message-ctr">
+                { props.attributes.message }
+            </div>
+            )
 
     }
 });
